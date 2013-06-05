@@ -1,13 +1,19 @@
+{{define "page" }}
 <!doctype html>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Zero's Blog</title>
+{{with .AppCube.BlogCube}}
+<title>{{.BlogName}}</title>
+{{end}}
 <link href="/statics/bootstrap/css/bootstrap.css" rel="stylesheet" />
 <style type="text/css">
 body {
   padding-top: 60px;
   padding-bottom: 40px;
+}
+.bigFont {
+  font-size: 140%;
 }
 .width0 {
   width: 100%;
@@ -53,19 +59,25 @@ body {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/">Zero's Blog</a>
+              {{with .AppCube.BlogCube}}
+          <a class="brand" href="/">{{.BlogName}}</a>
+              {{end}}
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="aboutme">About Me</a></li>
+              {{with .PageCube.ActiveNav}}
+              <li class="{{if strEqual . "home"}}active{{end}}"><a href="/">Home</a></li>
+              {{end}}
             </ul>
+             <form class="navbar-form pull-right">
+              <a href="manageblog" class="btn btn-info">Management</a>
+            </form> 
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
   <!-- end of nav -->
 
-  {{ template "container" . }}
+  {{ template "container" .}}
 
   <!-- javascript lib -->
 <!-- my javasciprt -->
@@ -74,3 +86,5 @@ body {
 <!-- Placed at the end of the document so the pages load faster -->
 </body>
 </html>
+{{end}}
+

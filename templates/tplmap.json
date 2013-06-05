@@ -1,0 +1,15 @@
+{
+    "baseTpl": "templates/base.tpl", 
+    "homeTpl": "templates/home.tpl",
+    "addAdminTpl": "templates/add_admin.tpl",
+    "manageArtTpl": "templates/manage_article.tpl",
+    "editArtTpl": "templates/edit_article.tpl",
+    "addArtTpl": "templates/add_article.tpl",
+    "manageBlogTpl": "templates/manage_blog.tpl",
+    "warningTpl": "templates/warning.tpl",
+    "successTpl": "templates/success.tpl",
+    "artTpl": "templates/article.tpl",
+    "manageAFsTpl": "templates/manage_afloats.tpl",
+    "addAFTpl": "templates/add_afloat.tpl",
+    "editAFTpl": "templates/edit_afloat.tpl"
+}
