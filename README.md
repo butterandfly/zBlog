@@ -2,7 +2,7 @@ zBlog
 =====
 ZBlog is a blog system that can be run on google app engine. It use the zCore framework. ZBlog use a bsd-style license, please feel free to use it.
 ZBlog是一个用golang编写，基于google app engine及zCore的博客程序。ZCore是我编写的一个轻量级web框架，你可以通过zBlog来学习zCore的使用。此程序使用类bsd许可，请自由、放心地使用。
-www.zeno-l.com，即本人的博客，使用了zBlog程序。
+本人的博客(<a href="http://www.zeno-l.com">www.zeno-l.com</a>)，使用了zBlog程序。
 
 How to use
 -----
